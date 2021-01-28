@@ -10,7 +10,22 @@ body {
 }
 .container {
     width: 80%;
+    box-shadow: 0 0 20px #e5e5e5;
+    padding: 0 40px;
 }
 input[id*="answer"] {
     display: none;
+}
+input[id*="answer"] + label {
+    font-size: 1.2em;
+    display: flex;
+    line-height: 4em;
+    justify-content: space-between;
+    position: relative;
+}
+input[id*="answer"] + label i {
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    transform: translateY(-50%);
 }
